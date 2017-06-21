@@ -23,6 +23,10 @@ Codes description
    ***Requires :*** [Atmel Studio][atmelstudio] integrated development platform (IDP).  
    **Note :** The `build.bat` helps to compile the [C][clanguage] files created by [Atmel Studio][atmelstudio]. The compilation to [hex][hex-wiki] is NOT POSSIBLE without the [Atmel Studio][atmelstudio] pre-installed.  
 
+* `USBasp`: The folder contain real [firmware][fw-wiki] from real [USBasp][usbasp] [micro-controller (MCU)][mcu-wiki] programmer Chinese clone which are available in Internet shops. I have no original code unfortunately. [USBasp][usbasp] is a [USB][usb] [in-circuit programmer][icsp] for [Atmel][atmel] [AVR][avr] controllers. Some people lose the original Chinese firmware trying to replace it to [official][usbasp] one because of the [Avrdude][avrdude] warning like: `"Warning: cannot set sck period. Please check for usbasp firmware update"`. Recommended DON'T REPLACE it cause you may kill your [USBasp][usbasp]. Just ignore the [Avrdude][avrdude] warning. If your original firmware lost you can try to recover it by firmware located in the folder ([HEX][hex-wiki] files). I'm not responsible for any possible damages or loss. You were WARNED! The `CMD` Windows Batch Scripting file helps execute tests by [Avrdude][avrdude] program for different program devices. This is just a simple example.  
+   ***Requires :*** [AVRDUDE][avrdude] is software for programming [Atmel][atmel] AVR [Micro-controllers][mcu-wiki].  
+   **Note :** The `avrcheck.cmd` helps to check if connected programmer is working right from command line.  
+
 * `All Applications`:  
    ***Requires :*** Compiler suitable for necessary tasks, Windows 7, 10  
    ***Important:*** To load [firmware][fw-wiki] in real [micro-controllers][mcu-wiki] you need the special programming devices.  
@@ -45,3 +49,10 @@ These code may be COPYRIGHT PROTECTED by ©2017 DimiG
 [atmega8]:http://www.atmel.com/products/microcontrollers/avr/megaavr.aspx
 [atmelstudio]:http://www.atmel.com/tools/ATMELSTUDIO.aspx
 [clanguage]:https://en.wikipedia.org/wiki/C_(programming_language)
+[usbasp]:http://www.fischl.de/usbasp
+[avrdude]:http://savannah.nongnu.org/projects/avrdude
+[atmel]:http://www.atmel.com
+[usb]:https://en.wikipedia.org/wiki/USB
+[icsp]:https://en.wikipedia.org/wiki/In-system_programming
+[avr]:https://en.wikipedia.org/wiki/Atmel_AVR
+
