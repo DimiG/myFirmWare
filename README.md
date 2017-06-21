@@ -23,9 +23,13 @@ Codes description
    ***Requires :*** [Atmel Studio][atmelstudio] integrated development platform (IDP).  
    **Note :** The `build.bat` helps to compile the [C][clanguage] files created by [Atmel Studio][atmelstudio]. The compilation to [hex][hex-wiki] is NOT POSSIBLE without the [Atmel Studio][atmelstudio] pre-installed.  
 
-* `USBasp`: The folder contain real [firmware][fw-wiki] from real [USBasp][usbasp] [micro-controller (MCU)][mcu-wiki] programmer Chinese clone which are available in Internet shops. I have no original code unfortunately. [USBasp][usbasp] is a [USB][usb] [in-circuit programmer][icsp] for [Atmel][atmel] [AVR][avr] controllers. Some people lose the original Chinese firmware trying to replace it to [official][usbasp] one because of the [Avrdude][avrdude] warning like: `"Warning: cannot set sck period. Please check for usbasp firmware update"`. Recommended DON'T REPLACE it cause you may kill your [USBasp][usbasp]. Just ignore the [Avrdude][avrdude] warning. If your original firmware lost you can try to recover it by firmware located in the folder ([HEX][hex-wiki] files). I'm not responsible for any possible damages or loss. You were WARNED! The `CMD` Windows Batch Scripting file helps execute tests by [Avrdude][avrdude] program for different program devices. This is just a simple example.  
+* `USBasp`: The folder contain real [firmware][fw-wiki] from real [USBasp][usbasp] [micro-controller (MCU)][mcu-wiki] programmer Chinese clone which are available in Internet shops. I have no original code unfortunately. [USBasp][usbasp] is a [USB][usb] [in-circuit programmer][icsp] for [Atmel][atmel] [AVR][avr] controllers. Some people lose the original Chinese firmware trying to replace it to [official][usbasp] one because of the [Avrdude][avrdude] warning like: `"Warning: cannot set sck period. Please check for usbasp firmware update"`. Recommended DON'T REPLACE it cause you may kill your [USBasp][usbasp]. Just ignore the [Avrdude][avrdude] warning. If your original firmware lost you can try to recover it by firmware located in the folder ([HEX][hex-wiki] files). I'm not responsible for any possible damages or loss. You were WARNED! The `CMD` Windows Batch Scripting file helps execute tests by [Avrdude][avrdude] program for different program devices. This is just a simple example. Additional files - Original FUSEs location and UNIT photo located in the same folder.  
    ***Requires :*** [AVRDUDE][avrdude] is software for programming [Atmel][atmel] AVR [Micro-controllers][mcu-wiki].  
    **Note :** The `avrcheck.cmd` helps to check if connected programmer is working right from command line.  
+
+* `LEDBLNK4ATMEGA`: This is a `Hello World` project for [ATmega8][atmega8] micro-controller (MCU) running at 1MHz. Blinking the [LED][led] connected to PD0 port. The circuit diagram and additional files located in the same folder. [HEX][hex-wiki] file applied as example.  
+   ***Requires :*** [Atmel Studio][atmelstudio] integrated development platform (IDP).  
+   **Note :**  The `build.bat` helps to compile the [C][clanguage] files created by [Atmel Studio][atmelstudio] by `Makefile`. The compilation to [hex][hex-wiki] is NOT POSSIBLE without the [Atmel Studio][atmelstudio] pre-installed. The `avrflash.cmd` helps to flash the [HEX][hex-wiki] file by [Avrdude][avrdude] program right from command line.  
 
 * `All Applications`:  
    ***Requires :*** Compiler suitable for necessary tasks, Windows 7, 10  
@@ -55,4 +59,4 @@ These code may be COPYRIGHT PROTECTED by ©2017 DimiG
 [usb]:https://en.wikipedia.org/wiki/USB
 [icsp]:https://en.wikipedia.org/wiki/In-system_programming
 [avr]:https://en.wikipedia.org/wiki/Atmel_AVR
-
+[led]:https://en.wikipedia.org/wiki/Light-emitting_diode
